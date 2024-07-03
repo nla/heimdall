@@ -27,6 +27,7 @@ Settings file
 The settings file specifies the server response cache implementation, and the HTTP call recorder implementation. The properties are as follows:
 
 SERVER_RESPONSE_CACHE
+
 This is the fully qualified class name of the server response cache implementation. By default, OnDiskHashServerResponseCache will be used, which caches server responses to disk.
 
 SERVER_RESPONSE_CACHE__CACHE_PATH
