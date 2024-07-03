@@ -26,25 +26,25 @@ Settings file
 
 The settings file specifies the server response cache implementation, and the HTTP call recorder implementation. The properties are as follows:
 
-SERVER_RESPONSE_CACHE  
+**SERVER_RESPONSE_CACHE **   
 This is the fully qualified class name of the server response cache implementation. By default, OnDiskHashServerResponseCache will be used, which caches server responses to disk.
 
-SERVER_RESPONSE_CACHE__CACHE_PATH  
+**SERVER_RESPONSE_CACHE__CACHE_PATH  **  
 Used by OnDiskHashServerResponseCache, specifies the directory in which server responses should be cached.
 
-SERVER_RESPONSE_CACHE__CLEAR_ON_INIT  
+**SERVER_RESPONSE_CACHE__CLEAR_ON_INIT  **  
 Used by OnDiskHashServerResponseCache, specifies whether or not to delete the cache directory if it exists when the crawl starts.
 
-CALL_RECORDER  
+**CALL_RECORDER  **  
 This is the fully qualified class name of the HTTP call recorder implementation. by default, heimdall.crawler.recorder.warc.WARCCallRecorder will be used, which records all HTTP calls into a single WARC file and generates a CDX file after the crawl.
 
-CALL_RECORDER__WARC_PATH  
+**CALL_RECORDER__WARC_PATH  **  
 Used by WARCCallRecorder, specifies the file that the WARC data should be written to.
 
-CALL_RECORDER__CDX_PATH  
+**CALL_RECORDER__CDX_PATH  **  
 Used by WARCCallRecorder, specifies the file that the CDX index should be written to.
 
-REFERENCE_POLLING_INTERVAL  
+**REFERENCE_POLLING_INTERVAL  **  
 Determines how often each worker will check the queue for work, in milliseconds. Defaults to 2000 (2 seconds).
 
 
