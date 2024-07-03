@@ -18,7 +18,7 @@ java -jar heimdall.jar <settings_file> <crawl_options_file> <seed_list_file>
 
 for example:
 
-java -jar heimdall.jar config/settings.properties config/crawl.properties config/seeds.txt
+java -jar heimdall.jar heimdall.crawler.CommandLineTool config/settings.properties config/crawl.properties config/seeds.txt
 
 
 Settings file
