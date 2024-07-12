@@ -14,7 +14,7 @@ Running a crawl from the command line
 
 Once packaged into a JAR, a crawl can be performed on the command line:
 
-java -cp heimdall.jar <settings_file> <crawl_options_file> <seed_list_file>
+java -cp heimdall.jar heimdall.crawler.CommandLineTool <settings_file> <crawl_options_file> <seed_list_file>
 
 for example:
 
